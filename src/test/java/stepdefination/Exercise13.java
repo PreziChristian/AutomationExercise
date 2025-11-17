@@ -20,8 +20,6 @@ public class Exercise13 {
 	@Given("I open the browser")
 	public void i_open_the_browser() {
 	  driver=new ChromeDriver();
-	 
-	  
 	}
 
 	@When("I enter the Automation Exercise URL")
@@ -85,6 +83,7 @@ public class Exercise13 {
 			   System.out.println(quntityValue);
 	   Assert.assertEquals(quntityValue, "4");
 	   
+	   driver.close();	   
 	}
 
 
